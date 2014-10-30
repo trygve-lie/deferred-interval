@@ -1,0 +1,33 @@
+{
+  "name": "deferred-interval",
+  "version": "0.1.0",
+  "description": "A set interval that defer the start of the next delay until the callback is executed.",
+  "main": "lib/interval.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:trygve-lie/deferred-interval.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trygve-lie/deferred-interval/issues"
+  },
+  "scripts": {
+    "pretest": "jshint ./lib/*.js ./test/*.js",
+    "test": "mocha ./test/*.js --reporter spec"
+  },
+  "keywords": [
+    "interval",
+    "setInterval",
+    "schedule",
+    "task"
+  ],
+  "author": "Trygve Lie <github@trygve-lie.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eventemitter3": "0.1.x"
+  },
+  "devDependencies": {
+    "jshint": "latest",
+    "mocha": "latest",
+    "chai": "latest"
+  }
+}
