@@ -1,6 +1,6 @@
 {
   "name": "deferred-interval",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A set interval that defer the start of the next delay until the callback is executed.",
   "main": "lib/interval.js",
   "repository": {

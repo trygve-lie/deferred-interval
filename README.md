@@ -21,8 +21,8 @@ Example of executing a function every 10th second:
 var Interval = require('deferred-interval');
 
 var schedule = new Interval();
-schedule.start(function (done) {
-	console.log('ping', Date.now());
+schedule.start(function (done, ticks) {
+	console.log('tick number:', ticks);
 	done();
 }, 10000);
 ```
