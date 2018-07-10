@@ -1,6 +1,6 @@
 # deferred-interval
 
-A set interval that defer the start of the next delay until the callback is 
+A set interval that defer the start of the next delay until the callback is
 executed.
 
 
@@ -18,9 +18,9 @@ $ npm install deferred-interval
 Example of executing a function every 10th second:
 
 ```js
-var Interval = require('deferred-interval');
+const Interval = require('deferred-interval');
 
-var schedule = new Interval();
+const schedule = new Interval();
 schedule.start(function (done, ticks) {
 	console.log('tick number:', ticks);
 	done();
@@ -47,7 +47,7 @@ Starts executing a callback on a given interval.
 
 Pauses execution of the callback
 
-  * `delay` - How long the pause should last. If no values is given the pause is 
+  * `delay` - How long the pause should last. If no values is given the pause is
   until resume is done manually
 
 
@@ -73,26 +73,16 @@ Adjust the delay of the execution of the callback function
 
 ## Environments
 
-Browser and node.js. This module use [EventEmitter3](https://github.com/primus/EventEmitter3) 
+Browser and node.js. This module use [EventEmitter3](https://github.com/primus/EventEmitter3)
 which works fine in browsers.
 
 
 
-## Tests
-
-```bash
-$ npm test
-```
-
-Tests are written in [mocha](http://mochajs.org/).
-
-
-
-## License 
+## License
 
 The MIT License (MIT)
 
-Copyright (c) 2014 - Trygve Lie post@trygve-lie.com
+Copyright (c) 2018 - Trygve Lie post@trygve-lie.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
