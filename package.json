@@ -11,8 +11,10 @@
     "url": "https://github.com/trygve-lie/deferred-interval/issues"
   },
   "scripts": {
-    "pretest": "jshint ./lib/*.js ./test/*.js",
-    "test": "mocha ./test/*.js --reporter spec"
+    "test": "tap test/*.js",
+    "test:coverage": "tap test/*.js --cov",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "keywords": [
     "interval",
@@ -23,11 +25,13 @@
   "author": "Trygve Lie <github@trygve-lie.com>",
   "license": "MIT",
   "dependencies": {
-    "eventemitter3": "2.0.0"
+    "eventemitter3": "3.1.0"
   },
   "devDependencies": {
-    "jshint": "latest",
-    "mocha": "latest",
-    "chai": "latest"
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "lolex": "^2.7.0",
+    "tap": "^12.0.1"
   }
 }

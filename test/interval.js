@@ -1,25 +1,10 @@
-/* jshint node: true, strict: true */
-/* global describe: true, it: true, before: true */
+'use strict';
 
-"use strict";
+const Interval = require('../');
 
-var mocha       = require('mocha'),
-    assert      = require('chai').assert,
-    Interval    = require('../');
+const schedule = new Interval();
 
-
-
-
-describe('a()', function(){
-
-    describe('b', function(){
-
-        it('c', function(){
-
-            assert.equal('a', 'a');
-
-        });
-
-    });
-
-});
+schedule.start((done, ticks) => {
+    console.log('tick number:', ticks);
+    done();
+}, 1000);
