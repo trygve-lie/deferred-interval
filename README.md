@@ -1,8 +1,7 @@
 # deferred-interval
 
-A set interval that defer the start of the next delay until the callback is 
-executed.
-
+A secure `setInterval` that defer the execution of the next interval only when the scheduled
+function have executed.
 
 
 ## Installation
@@ -12,27 +11,24 @@ $ npm install deferred-interval
 ```
 
 
-
 ## Basic example
 
 Example of executing a function every 10th second:
 
 ```js
-var Interval = require('deferred-interval');
+const Interval = require('deferred-interval');
 
-var schedule = new Interval();
-schedule.start(function (done, ticks) {
-	console.log('tick number:', ticks);
-	done();
+const schedule = new Interval();
+schedule.start((done, ticks) => {
+  console.log('tick number:', ticks);
+  done();
 }, 10000);
 ```
-
 
 
 ## API
 
 The following methods are available:
-
 
 ### .start(callback, delay, immediate)
 
@@ -42,14 +38,12 @@ Starts executing a callback on a given interval.
   * `delay` - How long, in milliseconds, each interval should be delayed.
   * `immediate` - If the callback should be executed immediately on start.
 
-
 ### .pause(delay)
 
 Pauses execution of the callback
 
-  * `delay` - How long the pause should last. If no values is given the pause is 
+  * `delay` - How long the pause should last. If no values is given the pause is
   until resume is done manually
-
 
 ### .resume(immediate)
 
@@ -57,11 +51,9 @@ Resumes executing the callback after a pause
 
   * `immediate` - If the callback should be executed immediately on resume.
 
-
 ### .stop()
 
 Stops execution of the callback - Everything is reset.
-
 
 ### .adjust(delay)
 
@@ -70,29 +62,17 @@ Adjust the delay of the execution of the callback function
   * `delay` - How long, in milliseconds, each interval should be delayed.
 
 
-
 ## Environments
 
-Browser and node.js. This module use [EventEmitter3](https://github.com/primus/EventEmitter3) 
+Browser and node.js. This module use [EventEmitter3](https://github.com/primus/EventEmitter3)
 which works fine in browsers.
 
 
-
-## Tests
-
-```bash
-$ npm test
-```
-
-Tests are written in [mocha](http://mochajs.org/).
-
-
-
-## License 
+## License
 
 The MIT License (MIT)
 
-Copyright (c) 2014 - Trygve Lie post@trygve-lie.com
+Copyright (c) 2018 - Trygve Lie post@trygve-lie.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
