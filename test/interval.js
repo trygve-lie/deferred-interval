@@ -9,7 +9,7 @@ const Interval = require('../');
  * Constructor
  */
 
-tap.test('Constructor() - object type - should be TtlMemCache', (t) => {
+tap.test('Constructor() - object type - should be DeferredInterval', (t) => {
     const interval = new Interval();
     t.equal(Object.prototype.toString.call(interval), '[object DeferredInterval]');
     t.end();
@@ -19,7 +19,7 @@ tap.test('Constructor() - object type - should be TtlMemCache', (t) => {
  * .start()
  */
 
-tap.test('.set() - delay: 2000ms, immidiate: not set - should run callback once after 2000ms', (t) => {
+tap.test('.start() - delay: 2000ms, immidiate: not set - should run callback once after 2000ms', (t) => {
     const clock = lolex.install();
     let count = 0;
 
@@ -37,7 +37,7 @@ tap.test('.set() - delay: 2000ms, immidiate: not set - should run callback once 
     clock.uninstall();
 });
 
-tap.test('.set() - delay: 2000ms, immidiate: false - should run callback once after 2000ms', (t) => {
+tap.test('.start() - delay: 2000ms, immidiate: false - should run callback once after 2000ms', (t) => {
     const clock = lolex.install();
     let count = 0;
 
@@ -55,7 +55,7 @@ tap.test('.set() - delay: 2000ms, immidiate: false - should run callback once af
     clock.uninstall();
 });
 
-tap.test('.set() - delay: 2000ms, immidiate: true - should run callback twice after 2000ms', (t) => {
+tap.test('.start() - delay: 2000ms, immidiate: true - should run callback twice after 2000ms', (t) => {
     const clock = lolex.install();
     let count = 0;
 
@@ -73,7 +73,7 @@ tap.test('.set() - delay: 2000ms, immidiate: true - should run callback twice af
     clock.uninstall();
 });
 
-tap.test('.set() - delay: 2000ms, immidiate: false - should emit start event once', (t) => {
+tap.test('.start() - delay: 2000ms, immidiate: false - should emit start event once', (t) => {
     const clock = lolex.install();
 
     const interval = new Interval();
@@ -92,7 +92,7 @@ tap.test('.set() - delay: 2000ms, immidiate: false - should emit start event onc
     clock.uninstall();
 });
 
-tap.test('.set() - delay: 2000ms, immidiate: true - should emit "start" event once', (t) => {
+tap.test('.start() - delay: 2000ms, immidiate: true - should emit "start" event once', (t) => {
     const clock = lolex.install();
 
     const interval = new Interval();
