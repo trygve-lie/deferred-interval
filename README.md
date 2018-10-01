@@ -3,7 +3,7 @@
 A secure `setInterval` that defer the execution of the next interval only when the scheduled
 function have executed.
 
-[![Dependencies](https://img.shields.io/david/trygve-lie/deferred-interval.svg?style=flat-square)](https://david-dm.org/trygve-lie/deferred-interval)[![Build Status](http://img.shields.io/travis/trygve-lie/deferred-interval/master.svg?style=flat-square)](https://travis-ci.org/trygve-lie/deferred-interval)
+[![Dependencies](https://img.shields.io/david/trygve-lie/deferred-interval.svg?style=flat-square)](https://david-dm.org/trygve-lie/deferred-interval)[![Build Status](http://img.shields.io/travis/trygve-lie/deferred-interval/master.svg?style=flat-square)](https://travis-ci.org/trygve-lie/deferred-interval) [![Greenkeeper badge](https://badges.greenkeeper.io/trygve-lie/deferred-interval.svg)](https://greenkeeper.io/)
 
 
 ## Installation
