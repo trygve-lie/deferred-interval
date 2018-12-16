@@ -5,7 +5,9 @@ function have executed.
 
 [![Dependencies](https://img.shields.io/david/trygve-lie/deferred-interval.svg?style=flat-square)](https://david-dm.org/trygve-lie/deferred-interval)
 [![Build Status](http://img.shields.io/travis/trygve-lie/deferred-interval/master.svg?style=flat-square)](https://travis-ci.org/trygve-lie/deferred-interval)
-[![Greenkeeper badge](https://badges.greenkeeper.io/trygve-lie/deferred-interval.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/trygve-lie/deferred-interval.svg?style=flat-square)](https://greenkeeper.io/)
+[![Known Vulnerabilities](https://snyk.io/test/github/trygve-lie/deferred-interval/badge.svg?targetFile=package.json&style=flat-square)](https://snyk.io/test/github/trygve-lie/deferred-interval?targetFile=package.json)
+
 
 
 ## Installation
