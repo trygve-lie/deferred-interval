@@ -1,6 +1,6 @@
 {
   "name": "deferred-interval",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A secure setInterval that defer the execution of the next interval only when the scheduled function have executed.",
   "main": "lib/interval.js",
   "files": [
