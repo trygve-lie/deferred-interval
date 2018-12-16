@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "A secure setInterval that defer the execution of the next interval only when the scheduled function have executed.",
   "main": "lib/interval.js",
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:trygve-lie/deferred-interval.git"
@@ -24,14 +27,11 @@
   ],
   "author": "Trygve Lie <github@trygve-lie.com>",
   "license": "MIT",
-  "dependencies": {
-    "eventemitter3": "3.1.0"
-  },
   "devDependencies": {
     "eslint": "^5.6.1",
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-plugin-import": "^2.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "lolex": "^3.0.0",
-    "tap": "^12.0.1"
+    "tap": "^12.1.1"
   }
 }

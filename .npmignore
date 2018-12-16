@@ -1,6 +1,0 @@
-node_modules
-*.log
-.gitignore
-.npmignore
-.eslintrc
-.travis.yml

@@ -3,7 +3,9 @@
 A secure `setInterval` that defer the execution of the next interval only when the scheduled
 function have executed.
 
-[![Dependencies](https://img.shields.io/david/trygve-lie/deferred-interval.svg?style=flat-square)](https://david-dm.org/trygve-lie/deferred-interval)[![Build Status](http://img.shields.io/travis/trygve-lie/deferred-interval/master.svg?style=flat-square)](https://travis-ci.org/trygve-lie/deferred-interval) [![Greenkeeper badge](https://badges.greenkeeper.io/trygve-lie/deferred-interval.svg)](https://greenkeeper.io/)
+[![Dependencies](https://img.shields.io/david/trygve-lie/deferred-interval.svg?style=flat-square)](https://david-dm.org/trygve-lie/deferred-interval)
+[![Build Status](http://img.shields.io/travis/trygve-lie/deferred-interval/master.svg?style=flat-square)](https://travis-ci.org/trygve-lie/deferred-interval)
+[![Greenkeeper badge](https://badges.greenkeeper.io/trygve-lie/deferred-interval.svg)](https://greenkeeper.io/)
 
 
 ## Installation
@@ -62,13 +64,6 @@ Stops execution of the callback - Everything is reset.
 Adjust the delay of the execution of the callback function
 
   * `delay` - How long, in milliseconds, each interval should be delayed.
-
-
-## Environments
-
-Browser and node.js. This module use [EventEmitter3](https://github.com/primus/EventEmitter3)
-which works fine in browsers.
-
 
 ## License
 
