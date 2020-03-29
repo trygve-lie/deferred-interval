@@ -30,7 +30,7 @@
   "devDependencies": {
     "eslint": "^6.0.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-import": "^2.20.2",
     "lolex": "^6.0.0",
     "tap": "^14.1.6"
   }
